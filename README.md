@@ -9,21 +9,182 @@
   <title>CV - Rakan Alshqari</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Fonts -->
+  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,900" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet" />
-  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet" />
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
-  <link href="css/resume.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Open Sans', serif;
+      padding-top: 54px;
+      color: #000000;
+    }
+
+    @media (min-width: 992px) {
+      body {
+        padding-top: 0;
+        padding-left: 17rem;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Saira Extra Condensed', serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    h1 {
+      font-size: 6rem;
+      line-height: 5.5rem;
+    }
+
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    .subheading {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: 'Saira Extra Condensed', serif;
+      font-size: 1.35rem;
+    }
+
+    .list-social-icons a {
+      color: #495057;
+    }
+
+    .list-social-icons a:hover {
+      color: #000000;
+    }
+
+    .list-social-icons a .fa-lg {
+      font-size: 1.75rem;
+    }
+
+    .list-icons {
+      font-size: 3rem;
+    }
+
+    .list-icons .list-inline-item i:hover {
+      color: #000000;
+    }
+
+    #sideNav .navbar-nav .nav-item .nav-link {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: 992px) {
+      #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+      }
+
+      #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+      }
+
+      #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+      }
+
+      #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+      }
+
+      #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+      }
+    }
+
+    section.resume-section {
+      border-bottom: 1px solid #000000;
+      padding-top: 5rem !important;
+      padding-bottom: 5rem !important;
+    }
+
+    section.resume-section .resume-item .resume-date {
+      min-width: none;
+    }
+
+    @media (min-width: 768px) {
+      section.resume-section {
+        min-height: 100vh;
+      }
+
+      section.resume-section .resume-item .resume-date {
+        min-width: 18rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+    }
+
+    .bg-primary {
+      background-color: #000000 !important;
+    }
+
+    .text-primary {
+      color: #000000 !important;
+    }
+
+    a {
+      color: #000000;
+    }
+
+    a:active,
+    a:focus,
+    a:hover {
+      color: #000000;
+    }
+  </style>
 </head>
 
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <img class="img-profile" src="img/profile.jpg" alt="Profile Picture" />
       <span class="d-block d-lg-none">Rakan Alshqari</span>
-      <span class="d-none d-lg-block"></span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,17 +209,13 @@
           <a href="mailto:rakanaltmymy91@gmail.com">rakanaltmymy91@gmail.com</a>
         </div>
         <p class="mb-5">
-          A recent graduate in Information Systems with a strong foundation in systems analysis, database management, and developing technology-driven solutions. Skilled in both technical and managerial areas, and experienced in working within multidisciplinary teams. Passionate about digital transformation, data analytics, and continuous learning. Eager to contribute to innovative, data-driven organizations.
+          A recent graduate in Information Systems with a strong foundation in systems analysis, database management, and developing technology-driven solutions...
         </p>
         <ul class="list-inline list-social-icons mb-0">
-          <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
-                  class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
-          <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
-                  class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-          <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
-                  class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
-          <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
-                  class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-github fa-lg"></i></a></li>
         </ul>
       </div>
     </section>
@@ -66,13 +223,13 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
       <div class="my-auto">
         <h2 class="mb-5">Education</h2>
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+        <div class="resume-item mb-5">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">University of Shaqra</h3>
             <div class="subheading mb-3">Bachelor of Information Systems</div>
           </div>
         </div>
-        <div class="resume-item d-flex flex-column flex-md-row">
+        <div class="resume-item">
           <div class="resume-content mr-auto">
             <h3 class="mb-0">King Abdullah High School</h3>
           </div>
@@ -87,7 +244,7 @@
           <li><i class="fa-li fa fa-check"></i> Database Management</li>
           <li><i class="fa-li fa fa-check"></i> SQL Programming</li>
           <li><i class="fa-li fa fa-check"></i> Business Analysis</li>
-          <li><i class="fa-li fa fa-check"></i> Microsoft Office (Word, Excel, PowerPoint)</li>
+          <li><i class="fa-li fa fa-check"></i> Microsoft Office</li>
         </ul>
       </div>
     </section>
@@ -96,7 +253,7 @@
       <div class="my-auto">
         <h2 class="mb-5">Interests</h2>
         <p>
-          I have a strong passion for Information Technology and continuously follow the latest trends in digital transformation. I enjoy developing small coding projects to improve my skills, and I participate in data analysis challenges. I also take online courses through Coursera and Udemy, and enjoy reading technical and management-related content. I engage in tech events and volunteer workshops to stay connected with the professional community.
+          I have a strong passion for IT and follow digital transformation trends...
         </p>
       </div>
     </section>
@@ -113,135 +270,10 @@
     </section>
   </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts -->
-  <script src="js/resume.min.js"></script>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.easing/jquery.easing.min.js"></script>
 </body>
 
 </html>
-/*!
- * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
- */
-body {
-  font-family: 'Open Sans', serif;
-  padding-top: 54px;
-  color: #000000; }
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem; } }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000; }
-
-h1 {
-  font-size: 6rem;
-  line-height: 5.5rem; }
-
-h2 {
-  font-size: 3.5rem; }
-
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem; }
-
-.list-social-icons a {
-  color: #000000; }
-  .list-social-icons a:hover {
-    color: #000000; }
-  .list-social-icons a .fa-lg {
-    font-size: 1.75rem; }
-
-.list-icons {
-  font-size: 3rem; }
-  .list-icons .list-inline-item i:hover {
-    color: #000000; }
-
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  text-transform: uppercase; }
-
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh; }
-    #sideNav .navbar-brand {
-      display: flex;
-      margin: auto auto 0;
-      padding: 0.5rem; }
-      #sideNav .navbar-brand .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
-        border: 0.5rem solid rgba(255, 255, 255, 0.2); }
-    #sideNav .navbar-collapse {
-      display: flex;
-      align-items: flex-start;
-      flex-grow: 0;
-      width: 100%;
-      margin-bottom: auto; }
-      #sideNav .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        width: 100%; }
-        #sideNav .navbar-collapse .navbar-nav .nav-item {
-          display: block; }
-          #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-            display: block; } }
-
-section.resume-section {
-  border-bottom: 1px solid #000000;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important; }
-  section.resume-section .resume-item .resume-date {
-    min-width: none; }
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh; }
-    section.resume-section .resume-item .resume-date {
-      min-width: 18rem; } }
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important; } }
-
-.bg-primary {
-  background-color: #000000 !important; }
-
-.text-primary {
-  color: #000000 !important; }
-
-a {
-  color: #000000; }
-  a:hover, a:focus, a:active {
-    color: #000000; }
-/*!
- * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
- */body{font-family:'Open Sans',serif;padding-top:54px;color:#000000}@media (min-width:992px){body{padding-top:0;padding-left:17rem}}h1,h2,h3,h4,h5,h6{font-family:'Saira Extra Condensed',serif;font-weight:700;text-transform:uppercase;color:#000000}h1{font-size:6rem;line-height:5.5rem}h2{font-size:3.5rem}.subheading{text-transform:uppercase;font-weight:500;font-family:'Saira Extra Condensed',serif;font-size:1.35rem}.list-social-icons a{color:#495057}.list-social-icons a:hover{color:#000000}.list-social-icons a .fa-lg{font-size:1.75rem}.list-icons{font-size:3rem}.list-icons .list-inline-item i:hover{color:#000000}#sideNav .navbar-nav .nav-item .nav-link{font-weight:600;text-transform:uppercase}@media (min-width:992px){#sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:17rem;height:100vh}#sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}#sideNav .navbar-brand .img-profile{max-width:10rem;max-height:10rem;border:.5rem solid rgba(0, 0, 0, 0.2)}#sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}#sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:100%}#sideNav .navbar-collapse .navbar-nav .nav-item{display:block}#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}}section.resume-section{border-bottom:1px solid #000000;padding-top:5rem!important;padding-bottom:5rem!important}section.resume-section .resume-item .resume-date{min-width:none}@media (min-width:768px){section.resume-section{min-height:100vh}section.resume-section .resume-item .resume-date{min-width:18rem}}@media (min-width:992px){section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}}.bg-primary{background-color:#000000!important}.text-primary{color:#000000!important}a{color:#000000}a:active,a:focus,a:hover{color:#000000}
