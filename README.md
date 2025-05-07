@@ -16,136 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet" />
   <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet" />
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-  <style>
-    body {
-      font-family: 'Open Sans', serif;
-      padding-top: 54px;
-      color: #000000;
-    }
-
-    @media (min-width: 992px) {
-      body {
-        padding-top: 0;
-        padding-left: 17rem;
-      }
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'Saira Extra Condensed', serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #000000;
-    }
-
-    h1 {
-      font-size: 6rem;
-      line-height: 5.5rem;
-    }
-
-    h2 {
-      font-size: 3.5rem;
-    }
-
-    .subheading {
-      text-transform: uppercase;
-      font-weight: 500;
-      font-family: 'Saira Extra Condensed', serif;
-      font-size: 1.35rem;
-    }
-
-    #sideNav .navbar-nav .nav-item .nav-link {
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    @media (min-width: 992px) {
-      #sideNav {
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        width: 17rem;
-        height: 100vh;
-      }
-
-      #sideNav .navbar-brand {
-        display: flex;
-        margin: auto auto 0;
-        padding: 0.5rem;
-      }
-
-      #sideNav .navbar-collapse {
-        display: flex;
-        align-items: flex-start;
-        flex-grow: 0;
-        width: 100%;
-        margin-bottom: auto;
-      }
-
-      #sideNav .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-      }
-
-      #sideNav .navbar-collapse .navbar-nav .nav-item {
-        display: block;
-      }
-
-      #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-        display: block;
-      }
-    }
-
-    section.resume-section {
-      border-bottom: 1px solid #000000;
-      padding-top: 5rem !important;
-      padding-bottom: 5rem !important;
-    }
-
-    @media (min-width: 768px) {
-      section.resume-section {
-        min-height: 100vh;
-      }
-
-      section.resume-section .resume-item .resume-date {
-        min-width: 18rem;
-      }
-    }
-
-    @media (min-width: 992px) {
-      section.resume-section {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
-      }
-    }
-
-    .bg-primary {
-      background-color: #000000 !important;
-    }
-
-    .text-primary {
-      color: #000000 !important;
-    }
-
-    a {
-      color: #000000;
-    }
-
-    a:hover,
-    a:focus,
-    a:active {
-      color: #000000;
-    }
-  </style>
+  <link href="css/resume.min.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -254,3 +125,128 @@
 </body>
 
 </html>
+body {
+  font-family: 'Open Sans', serif;
+  padding-top: 54px;
+  color: #000000;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.35rem;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  border-bottom: 1px solid #000000;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: #000000 !important;
+}
+
+.text-primary {
+  color: #000000 !important;
+}
+
+a {
+  color: #000000;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #000000;
+}
